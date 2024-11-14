@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fisumepa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="header-box">
+        <div id="image-animation">
+            <img src="fisumepa.png" alt="Logo">
+        </div>
+        <div id="text-content">
+            <h1>Fisumepa</h1>
+            <a id="informacion-link" href="#informacion-section">Información</a>
+            <a id="emergencias-link" href="#emergencias-section">Emergencias</a>
+            <a id="consultas-link" href="#consultas-section">Consultas</a>
+            <a id="historial-medico-link" href="#historial-medico-section">Historial Médico</a>
+            <a id="farmacia-link" href="#farmacia-section">Farmacia</a>
+            <a id="derechos-link" href="#derechos-section">Derechos del Usuario</a>
+            <a id="centro-medico-link" href="#centro-medico-section">Busca tu Centro Médico</a>
+            <a id="vacunatorio-link" href="#vacunatorio-section">Vacunatorio</a>
+        </div>
+    </div>
+
+ 
+<div id="informacion-section" class="section" onclick="openModal('modal-informacion')">
+  <h2>Información</h2>
+</div>
+
+<div id="emergencias-section" class="section" onclick="openModal('modal-emergencias')">
+  <h2>Emergencias</h2>
+</div>
+
+<div id="consultas-section" class="section" onclick="openModal('modal-consultas')">
+  <h2>Consultas</h2>
+</div>
+
+<div id="historial-section" class="section" onclick="openModal('modal-historial')">
+  <h2>Historial Médico</h2>
+</div>
+
+<div id="farmacia-section" class="section" onclick="openModal('modal-farmacia')">
+  <h2>Farmacia</h2>
+</div>
+
+<div id="derechos-section" class="section" onclick="openModal('modal-derechos')">
+  <h2>Derechos del Usuario</h2>
+</div>
+
+<div id="centro-section" class="section" onclick="openModal('modal-centro')">
+  <h2>Busca tu Centro Médico</h2>
+</div>
+
+<div id="vacunatorio-section" class="section" onclick="openModal('modal-vacunatorio')">
+  <h2>Vacunatorio</h2>
+</div>
+
+
+<div id="modal-informacion" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeModal('modal-informacion')">&times;</span>
+      <h2>Información</h2>
+      <p>En esta página web podra acceder a todos los servicios médicos que necesites, digitalmente, sin 
+        necesidad de largas esperas, ni de presentarte en los establecimientos médicos que estas acostumbrado.
+      </p>
+  </div>
+</div>
+
+<div id="modal-emergencias" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeModal('modal-emergencias')">&times;</span>
+      <h2>Emergencias</h2>
+      <p>Las 24 horas del día, los 365 días del año, puedes solicitar la atención médica para su emergencia.
+        Seleccione su nivel de emergencia: ROJO, NARANJA O AMARILLO y será contactado a la brevedad.
+      </p>
+  </div>
+</div>
+
+<div id="modal-consultas" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeModal('modal-consultas')">&times;</span>
+      <h2>Consultas</h2>
+      <p>Usted podrá consultar ante cualquier duda, que no requiera una emergencia, pero si una respuesta médica
+        oportuna en forma y tiempo. Tenemos a su disposición médicos generales preparados para responder.</p>
+  </div>
+</div>
+
+<div id="modal-historial" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeModal('modal-historial')">&times;</span>
+      <h2>Historial Médico</h2>
+      <p>Es un derecho del usuario conocer su historia médica, la misma debe estar actualizada con toda la Información
+        desde su nacimiento hasta el momento actual.</p>
+  </div>
+</div>
+
+<div id="modal-farmacia" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeModal('modal-farmacia')">&times;</span>
+      <h2>Farmacia</h2>
+      <p>Usted puede consultar la disponibilidad de medicamentos a los cuales puede acceder con su receta médica digital.</p>
+  </div>
+</div>
+
+<div id="modal-derechos" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeModal('modal-derechos')">&times;</span>
+      <h2>Derechos del Usuario</h2>
+      <p>Toda persona tiene derecho a acceder a una atención integral que comprenda todas aquellas acciones destinadas a la
+        promoción, protección, recuperación, rehabilitación de la salud y cuidados paliativos, de acuerdo a las definiciones
+        que establezca el Ministerio de Salud Pública.</p>
+  </div>
+</div>
+
+<div id="modal-centro" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeModal('modal-centro')">&times;</span>
+      <h2>Busca tu Centro Médico</h2>
+      <p>En cualquier lugar que te encuentres puedes acceder al buscador de centros médicos habilitados.
+        Ingrese aquí su ubicación:....
+      </p>
+  </div>
+</div>
+
+<div id="modal-vacunatorio" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeModal('modal-vacunatorio')">&times;</span>
+      <h2>Vacunatorio</h2>
+      <p>Ingrese aquí su certificado de vacunación virtual.
+        Puede acceder al calendario de vacunación en cualquier momento y agendar su próxima vacuna.
+      </p>
+  </div>
+</div>
+<footer id="footer">
+  <p>&copy; 2024 Fisumepa. Todos los derechos reservados.</p>
+</footer>
+<div id="carousel" class="carousel">
+  <div class="carousel-images">
+      <img src="1.jpg" alt="Imagen 1" class="carousel-item active">
+      <img src="2.jpg" alt="Imagen 2" class="carousel-item">
+      <img src="3.jpg" alt="Imagen 3" class="carousel-item">
+  </div>
+</div>
+<div id="secciones-title" class="section-title">
+  <h2>Secciones</h2>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
